@@ -1,0 +1,17 @@
+<!-- importing the html content from layout.html which is common in about/home files -->
+{% extends "layout.html" %} {% block content %}
+<!-- Jinja2 is used for template -->
+<!-- this is the code block start as we iterate through posts list of dict from flaskblog.py -->
+{% for post in posts %}
+<article class="media content-section">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a class="mr-2" href="#">{{ post.author }}</a>
+      <small class="text-muted">{{ post.date_posted }}</small>
+    </div>
+    <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+    <p class="article-content">{{ post.content }}</p>
+  </div>
+</article>
+<!-- this is the end of the section -->
+{% endfor %} {% endblock content %}

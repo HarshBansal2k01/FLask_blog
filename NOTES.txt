@@ -1,0 +1,5 @@
+set FLASK_APP=flaskblog.py (we need to set an environment variable for our file FLASK_APP )
+
+//TEMPLATING ENGINE
+-> Flask uses Jinja2 templaing engine:- allow uus to write code in side templates(in python folder)
+->It is used to create HTML, XML or other markup formats that are returned to the user via an HTTP request.
